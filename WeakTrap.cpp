@@ -9,7 +9,7 @@ void WeakTrap::GetInTrap(WeakRobot &R)
 {
 
 	
-	if (R.GetNrOfItems() >= 3)  //pierde 3 item-uri daca are si se intoarce la inceput, altfel pierde runda
+	if (R.GetNrOfItems() >= 3)  // pierde 3 item-uri daca are si se intoarce la inceput, altfel pierde runda
 	{
 		int x = R.GetNrOfItems();
 		x -= 3;

@@ -10,7 +10,7 @@ class Round
 
 public:
 	Round();
-	void Play();
+	void Play();									// functie care deruleaza o runda de joc
 	static Round* GetInstance()
 	{
 		return instance;

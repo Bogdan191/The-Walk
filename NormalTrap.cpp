@@ -4,7 +4,7 @@
 
 void NormalTrap::GetInTrap(NormalRobot &R)
 {
-	if (R.GetNrOfItems() >= 2) //pierde 2 item-uri daca are si se intoarce la inceput, altfel pierde runda
+	if (R.GetNrOfItems() >= 2) // pierde 2 item-uri daca are si se intoarce la inceput, altfel pierde runda
 	{
 		int x = R.GetNrOfItems();
 		x--;

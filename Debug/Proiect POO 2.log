@@ -1,2 +1,7 @@
-﻿  Proiect POO 2.cpp
+﻿  Map.cpp
+e:\c++ projects\poo\proiect poo 2\proiect poo 2\map.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Objects.cpp
+  Proiect POO 2.cpp
+  Round.cpp
+  Generating Code...
   Proiect POO 2.vcxproj -> E:\C++ Projects\POO\Proiect POO 2\Debug\Proiect POO 2.exe

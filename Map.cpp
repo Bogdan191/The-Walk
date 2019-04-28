@@ -18,7 +18,7 @@ void Map::MakeMap()
 	int i;
 	int r, c;
 	srand(time(NULL));
-	///seteaza destinatia
+	// seteaza destinatia
 	destination.first = rand() % nr_rows;
 	destination.second = rand() % nr_columns;
 	while (destination.first == 0 && destination.second == 0)
@@ -28,7 +28,7 @@ void Map::MakeMap()
 	}
 	map[destination.first][destination.second].SetDestination(true);
 	
-	///planteaza 15 de cpacane in harta
+	// planteaza 15 de cpacane in harta
 	for (i = 0; i < 15; i++)
 	{
 		r = rand() % 17;
@@ -40,11 +40,11 @@ void Map::MakeMap()
 		}
 		
 		map[r][c].SetHasTrap(true);
-		int trapNr = (rand() % 3) + 1; ///aleg un numar random intre 1 si 3, corespndent cu tipul robotului
+		int trapNr = (rand() % 3) + 1;				// aleg un numar random intre 1 si 3, corespndent cu tipul robotului
 		map[r][c].SetTrap(trapNr);
 	}
 
-	///incerc sa plantez maxim 45 de item-uri in harta
+    // incerc sa plantez maxim 45 de item-uri in harta
 	for (i = 0; i < 45; i++)
 	{
 		r = rand() % 17;
@@ -55,7 +55,7 @@ void Map::MakeMap()
 			c = rand() % 17;
 		}
 		map[r][c].SetHasItem(true);
-		int itemNr = (rand() % 3) + 1;    ///aleg un numar random intre 1 si 3, corespondent cu tipul robotului
+		int itemNr = (rand() % 3) + 1;				// aleg un numar random intre 1 si 3, corespondent cu tipul robotului
 		map[r][c].SetItem(itemNr);
 
 	}
@@ -88,7 +88,7 @@ pair<int, int>Map::NextPosition(int x, int y)
 {
 	pair<int, int> NewPos;
 
-	///verificam daca avem intem-uri in vecini
+	//verificam daca avem intem-uri in vecini
 	if (map[x + 1][y].HasItem() == true && x <= 18)
 	{
 		NewPos.first = x + 1;

@@ -5,7 +5,7 @@
 void StrongTrap::GetInTrap(StrongRobot &R)
 {
 	
-	if (R.GetNrOfItems() > 0) //daca intra in capcana, pierde un item si se intoarce la inceput
+	if (R.GetNrOfItems() > 0) // daca intra in capcana, pierde un item si se intoarce la inceput
 	{
 		int x = R.GetNrOfItems();
 		x--;
